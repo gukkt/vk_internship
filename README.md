@@ -34,8 +34,7 @@ cd vk_internship
        ```
        python manage.py test
        ```
-   5. 
-   5Запускаем проект:
+   5. Запускаем проект:
        ```
        python manage.py runserver
        ```
