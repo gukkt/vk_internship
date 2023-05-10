@@ -12,13 +12,14 @@ cd vk_internship
 1. ### Запуск проекта с докером:
     ```
     docker build -t friends-service .
-    docker run -p 8080:8080 friends-service
+    docker run friends-service test
+    docker run -p 8080:8000 friends-service
     ```
 
 2. ### Запуск проекта без докера:
    1. Создаём переменную окружения:
        ```
-       python3.10 -m venv venv
+       python3.11 -m venv venv
        source venv/bin/activate
        ```
    2. Устанавливаем зависимости:
@@ -29,7 +30,12 @@ cd vk_internship
        ```
        python manage.py migrate
        ```
-   4. Запускаем проект:
+   4. Запускаем тесты:
+       ```
+       python manage.py test
+       ```
+   5. 
+   5Запускаем проект:
        ```
        python manage.py runserver
        ```
