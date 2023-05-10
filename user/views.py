@@ -20,6 +20,7 @@ from user.serializers import UserSerializer
             description='ID пользователя',
             required=True,
             type=int,
+            location='path'
         )
     ]
 )
